@@ -7,7 +7,7 @@ import { sapphire } from "../styles"
 const Intro = () => {
   return (
     <Wrapper>
-      <img src={colorLogo} />
+      <img src={colorLogo} alt="logo" />
       <button>Book Now</button>
     </Wrapper>
   )
