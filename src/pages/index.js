@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/Intro"
 import About from "../components/About"
+import Mini from "../components/MiniPortfolio"
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <main>
       <Intro />
       <About />
+      <Mini />
     </main>
   </Layout>
 )
