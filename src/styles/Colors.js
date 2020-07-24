@@ -18,4 +18,5 @@ export const white = "#FFFFFF"
 
 // Complimentary Colors /////////////////////////////
 export const lavender = "#E4CCF6"
-export const periwinkle = "#4168B3"
+export const periwinkle = "#4168B2"
+export const purple = "#3D046A"

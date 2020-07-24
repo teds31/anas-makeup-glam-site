@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Intro from "../components/Intro"
 import About from "../components/About"
 import Mini from "../components/MiniPortfolio"
+import MUServices from "../components/services/Makeup"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Intro />
       <About />
       <Mini />
+      <MUServices />
     </main>
   </Layout>
 )
