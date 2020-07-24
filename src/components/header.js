@@ -1,34 +1,22 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import lips from "../images/logos/lips.png"
+import { darkBlue, lavender } from "../styles"
+import styled from "styled-components"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <Wrapper style={{backgroundColor: darkBlue}}>
+    <Link to="/">
+      <img src={lips} alt="lips" style={{height: "82px", width: "82px", margin: "0px"}} />
+    </Link>
+    <div className="btn-holder">
+      <button>Portfolio</button>
+      <button>Services</button>
+      <button>About Me</button>
+      <button>Contact</button>
     </div>
-  </header>
+  </Wrapper>
 )
 
 Header.propTypes = {
@@ -38,5 +26,31 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
+const Wrapper = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn-holder {
+    height: auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    background-color: ${lavender};
+    color: black;
+
+    border: none;
+    border-radius: 4px;
+
+    height: 30px;
+    width: 100px;
+
+    margin: 15px;
+  }
+`
 
 export default Header

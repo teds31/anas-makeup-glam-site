@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Ana's Makeup Glam`,
-    description: `//will need to be changed later`,
+    title: `Ana's Makeup Site`,
+    description: `Makeup`,
     author: `@ireneperez`,
   },
   plugins: [
@@ -18,15 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo/lips.png`
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
