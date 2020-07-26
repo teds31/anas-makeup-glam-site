@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./Footer"
 import "../styles/layout.css"
 import "../styles/bootstrap-grid.css"
 
@@ -30,9 +31,7 @@ const Layout = ({ children }) => {
         <main>
           {children}
         </main>
-        <footer>
-          © {new Date().getFullYear()}
-        </footer>
+      <Footer />
     </>
   )
 }
