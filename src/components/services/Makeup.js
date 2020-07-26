@@ -17,11 +17,11 @@ const MUServices = () => {
         </div>
         <div className="col-sm-6">
           <ul>
-            <li>Day Makeup / Maquillage de Dia ...............................................................................</li>
-            <li>Cut Crease (or) Glitter .................................................................................................</li>
-            <li>Full Eye Glam / Glamour Completo ...........................................................................</li>
-            <li>Photo Shoots / Sección de Fotografía .........................................................................</li>
-            <li>Strip Lashes / Pestañas ...............................................................................................</li>
+            <li>Day Makeup / Maquillage de Dia </li>
+            <li>Cut Crease (or) Glitter </li>
+            <li>Full Eye Glam / Glamour Completo </li>
+            <li>Photo Shoots / Sección de Fotografía </li>
+            <li>Strip Lashes / Pestañas </li>
           </ul>
         </div>
         <div className="col-sm-2">
@@ -41,6 +41,7 @@ const MUServices = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid ${lavender};
 
   .title-box {
     display: flex;
