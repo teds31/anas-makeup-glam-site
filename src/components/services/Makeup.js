@@ -1,21 +1,31 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
+//imported images
 import brushes from "../../images/make-up-kit.png"
+import work from "../../images/ana-working.jpg"
+
+//imported colors
 import { purple, lavender } from "../../styles"
 
+//component
 const MUServices = () => {
   return (
-    <Wrapper className="d-flex flex-column justify-content-around">
-      <h2 style={{color: `${purple}`}} className="col-sm-12">Services</h2>
-      <div className="row">
+    <Wrapper className="d-flex flex-column">
+      <div className="col-sm-12 d-flex justify-content-center" style={{padding: "25px"}}>
+        <h1 style={{color: `${purple}`}}>Services</h1>
+      </div>
+
+      <div className="row align-items-center justify-content-around">
         <div className="col-sm-3">
-          <div className="title-box">
+          <div className="title-box d-flex align-items-center justify-content-around flex-column">
             <img src={brushes} alt="makeup brushes"/>
             <p>Makeup Glam</p>
           </div>
         </div>
-        <div className="col-sm-6">
+
+        <div className="col-sm-3">
           <ul>
             <li>Day Makeup / Maquillage de Dia </li>
             <li>Cut Crease (or) Glitter </li>
@@ -24,7 +34,8 @@ const MUServices = () => {
             <li>Strip Lashes / Pestañas </li>
           </ul>
         </div>
-        <div className="col-sm-2">
+
+        <div className="col-sm-1">
           <ul>
             <li>$50</li>
             <li>$65</li>
@@ -33,26 +44,26 @@ const MUServices = () => {
             <li>$10</li>
           </ul>
         </div>
+
+        <div className="col-sm-4 d-flex justify-content-center">
+          <img alt="Ana doing someone's makeup" src={work} style={{borderRadius: "15px", height: "225px", width: "auto"}} />
+        </div>
       </div>
     </Wrapper>
   )
 }
 
+//component-specific styling
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   border-bottom: 1px solid ${lavender};
 
   .title-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
     background-color: ${lavender};
 
     width: 225px;
     height: 225px;
+
+    margin: 0px 50px;
 
     font-size: 34px;
 
@@ -63,21 +74,26 @@ const Wrapper = styled.div`
       width: 64px;
     }
 
-    margin: 0px 50px;
+    p {
+      margin: 0;
+    }
   }
 
   ul {
     list-style: none;
+
     margin: 0px;
+    padding: 0px;
+
     li {
       margin: 10px;
     }
   }
 
   .row {
-    align-items: center;
     padding: 30px;
+    padding-top: 10px;
   }
 `
-
+//export statement
 export default MUServices

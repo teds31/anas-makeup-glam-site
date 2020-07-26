@@ -1,15 +1,20 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
-import { lavender } from "../../styles"
+//imported images
 import mirror from "../../images/mirror.png"
 import joker from "../../images/joker.jpg"
 
+//imported colors
+import { lavender } from "../../styles"
+
+//component
 const Cosplay = () => {
   return (
-    <Wrapper className="row">
+    <Wrapper className="row align-items-center justify-content-around">
       <div className="col-sm-3">
-        <div className="title-box">
+        <div className="title-box d-flex align-items-center justify-content-around flex-column">
           <img src={mirror} alt="vanity mirror"/>
           <p>Costume and Film</p>
         </div>
@@ -19,31 +24,28 @@ const Cosplay = () => {
         <p>I also provide makeup artistry for costumes, cosplay and film. No matter the season, whether it's Halloween or Comi-Con, or looking to highlight your characters in your film or play, I can help you realize your costume.</p>
       </div>
 
-      <div className="col-sm-3">
-        <img alt="girl with The Joker makeup" src={joker} className="joker" />
+      <div className="col-sm-4 d-flex justify-content-center">
+        <img alt="girl with The Joker makeup" src={joker} style={{borderRadius: "15px", height: "225px", width: "auto"}} />
       </div>
     </Wrapper>
   )
 }
 
+//component-specific styling
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
   padding: 30px;
+
   border-bottom: 1px solid ${lavender};
 
   .title-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
     background-color: ${lavender};
 
     width: 225px;
     height: 225px;
 
     font-size: 34px;
+
+    margin: 0px 50px;
 
     border-radius: 18px;
 
@@ -52,14 +54,10 @@ const Wrapper = styled.div`
       width: 64px;
     }
 
-    margin: 0px 50px;
-  }
-
-  .joker {
-    height: 225px;
-    width: auto;
-    border-radius: 20px;
+    p {
+      margin: 0;
+    }
   }
 `
-
+//export statement
 export default Cosplay
