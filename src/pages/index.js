@@ -8,6 +8,7 @@ import Mini from "../components/MiniPortfolio"
 import MUServices from "../components/services/Makeup"
 import HServices from "../components/services/Hair"
 import CosServices from "../components/services/Costume-Film"
+import Quote from "../components/QuoteBanner"
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <MUServices />
       <HServices />
       <CosServices />
+      <Quote />
     </main>
   </Layout>
 )
