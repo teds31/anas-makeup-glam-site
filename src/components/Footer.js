@@ -1,42 +1,59 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
-import { AiFillTwitterCircle } from "react-icons/ai"
-import { TiSocialInstagramCircular, TiSocialYoutubeCircular } from "react-icons/ti"
-import { FaFacebook } from "react-icons/fa"
-import { FiMail } from "react-icons/fi"
-import { MdPhoneIphone } from "react-icons/md"
+//imported icons
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaYoutube } from "react-icons/fa"
 
-import { darkBlue } from "../styles"
+//imported colors
+import { darkBlue, sapphire } from "../styles"
 
+//component
 const Footer = () => {
   return (
-    <Wrapper>
-      <div className="icon-holder">
-        <a href="https://www.instagram.com/anas_makeup_glam/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Instagram page">
-          <TiSocialInstagramCircular />
-        </a>
+    <Wrapper className="row d-flex flex-column align-items-center">
+
+      <div className="d-flex justify-content-center">
         <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
-          <FaFacebook />
+          <FaFacebookSquare className="icon" />
         </a>
+
         <a href="https://twitter.com/AnaSaav20733864?s=09" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Twitter page">
-          <AiFillTwitterCircle />
+          <FaTwitterSquare className="icon" />
         </a>
+
+        <a href="https://www.instagram.com/anas_makeup_glam/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Instagram page">
+          <FaInstagram className="icon" />
+        </a>
+
         <a href="https://www.youtube.com/channel/UCxck-Oyy9pTGb_ZtfSqsBdQ" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's YouTube channel">
-          <TiSocialYoutubeCircular />
+          <FaYoutube className="icon" />
         </a>
       </div>
-      <div>
-        <FiMail /><p>booking@anasmakeupglam.com</p>
-        <MdPhoneIphone /><p>702-381-3158</p>
-      </div>
+
+      <p>702-381-3158 | booking@anasmakeupglam.com</p>
+
       <p>© {new Date().getFullYear()}</p>
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.footer`
   background-color: ${darkBlue};
-`
+  color: white;
 
+  a:link, a:visited, a:active {
+    color: white;
+  }
+
+  a:hover {
+    color: ${sapphire};
+  }
+
+  .icon {
+    font-size: 30px;
+    margin: 15px;
+  }
+`
+//export statement
 export default Footer
