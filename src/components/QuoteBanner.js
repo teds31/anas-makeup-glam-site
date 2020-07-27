@@ -1,8 +1,11 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
+//imported colors
 import { sapphire } from "../styles"
 
+//component
 const Quote = () => {
   return (
     <Wrapper className="col-md-12 d-flex flex-column align-items-center">
@@ -12,7 +15,7 @@ const Quote = () => {
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.div`
   background-color: ${sapphire};
 
@@ -20,5 +23,5 @@ const Wrapper = styled.div`
 
   color: white;
 `
-
+//export statement
 export default Quote

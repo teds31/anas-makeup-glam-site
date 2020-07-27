@@ -14,9 +14,10 @@ const Cosplay = () => {
   return (
     <Wrapper className="d-flex align-items-center justify-content-around">
       <div className="col-sm-3">
-        <div className="title-box d-flex align-items-center justify-content-around flex-column">
+        <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={mirror} alt="vanity mirror"/>
-          <p>Costume and Film</p>
+          <p>Costume</p>
+          <p>& Film</p>
         </div>
       </div>
 

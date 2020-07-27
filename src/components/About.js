@@ -1,11 +1,15 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
+
+//imported images
 import ana from "../images/ana.jpg"
 import stroke from "../images/paint-stroke.png"
 
+//component
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <div className="img-holder col-lg-6">
         <img src={ana} alt="Ana"/>
       </div>
@@ -30,7 +34,7 @@ const About = () => {
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -51,6 +55,12 @@ const Wrapper = styled.div`
     height: 285px;
     border-radius: 10px;
   }
-`
 
+  .col-lg-5 {
+    padding: 0;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+`
+//export statement
 export default About

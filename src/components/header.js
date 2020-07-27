@@ -1,10 +1,17 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+//imported dependencies
 import React from "react"
-import lips from "../images/logos/lips.png"
-import { darkBlue, lavender } from "../styles"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 
+import { Link } from "gatsby"
+
+//imported images
+import lips from "../images/logos/lips.png"
+
+//imported colors
+import { darkBlue, lavender, offBlack } from "../styles"
+
+//component
 const Header = () => (
   <Wrapper style={{backgroundColor: darkBlue}}>
     <Link to="/">
@@ -12,8 +19,8 @@ const Header = () => (
     </Link>
     <div className="btn-holder">
       <button>Portfolio</button>
-      <button>Services</button>
-      <button>About Me</button>
+      <button><Link to="#services">Services</Link></button>
+      <button><Link to="#about">About Me</Link></button>
       <button>Contact</button>
     </div>
   </Wrapper>
@@ -27,6 +34,7 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
+//component-specific styling
 const Wrapper = styled.header`
   display: flex;
   align-items: center;
@@ -37,6 +45,15 @@ const Wrapper = styled.header`
 
     display: flex;
     align-items: center;
+
+    a:link, a:visited, a:active {
+      color: ${offBlack};
+    }
+  
+    a:hover {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   button {

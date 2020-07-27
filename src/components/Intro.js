@@ -1,9 +1,14 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
+//imported image
 import colorLogo from "../images/logos/color-logo-transparent.png"
+
+//imported colors
 import { sapphire } from "../styles"
 
+//component
 const Intro = () => {
   return (
     <Wrapper>
@@ -12,7 +17,7 @@ const Intro = () => {
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -24,13 +29,21 @@ const Wrapper = styled.div`
   img {
     width: 450px;
     height: auto;
+    
     margin: 25px;
   }
 
   button {
-    width: 100px;
-    height: 30px;
+    background-color: white;
+
+    width: 110px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 18px;
   }
 `
-
+//export statement
 export default Intro

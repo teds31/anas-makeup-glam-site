@@ -1,3 +1,4 @@
+//imported dependencies
 import React from "react"
 import styled from "styled-components"
 
@@ -11,6 +12,7 @@ import wedding from "../images/wedding-1.jpg"
 import white from "../images/white-dress-5.jpg"
 import weddingTwo from "../images/wedding-dress.jpg"
 
+//component
 const Mini = () => {
   return (
     <Wrapper className="d-flex align-items-center flex-column">
@@ -25,7 +27,7 @@ const Mini = () => {
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.div`
   background-color: ${lavender};
   padding: 1.5rem;
@@ -82,5 +84,5 @@ const Wrapper = styled.div`
     border-radius: 5px;
   }
 `
-
+//export statement
 export default Mini

@@ -1,10 +1,15 @@
+//imported dependencies
 import React from 'react'
 import styled from "styled-components"
 import Carousel from "react-bootstrap/Carousel"
+
+//imported req. stylesheet
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+//imported colors
 import { sapphire, lavender } from "../styles"
 
+//component
 const Testimonials = () => {
   return (
     <Wrapper className="d-flex flex-column align-items-center justify-content-center" >
@@ -56,17 +61,16 @@ const Testimonials = () => {
             </div>
           </div>
         </Carousel.Item>
-
-
       </Carousel>
     </Wrapper>
   )
 }
-
+//component-specific styling
 const Wrapper = styled.div`
   background-color: ${sapphire};
   padding: 30px;
   color: ${lavender};
+
   .carousel-card {
     background-color: ${sapphire};
     display: flex;
@@ -91,5 +95,5 @@ const Wrapper = styled.div`
     text-align: center;
   }
 `
-
+//export statement
 export default Testimonials

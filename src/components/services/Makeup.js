@@ -12,14 +12,14 @@ import { purple, lavender, periwinkle, darkBlue, sapphire } from "../../styles"
 //component
 const MUServices = () => {
   return (
-    <Wrapper className="d-flex flex-column">
+    <Wrapper id="services" className="d-flex flex-column">
       <div className="col-sm-12 d-flex justify-content-center" style={{padding: "25px"}}>
         <h1 style={{color: `${purple}`}}>Services</h1>
       </div>
 
       <div className="makeup d-flex align-items-center justify-content-around">
         <div className="col-sm-3">
-          <div className="title-box d-flex align-items-center justify-content-around flex-column">
+          <div className="title-box d-flex align-items-center justify-content-center flex-column">
             <img src={brushes} alt="makeup brushes"/>
             <p>Makeup Glam</p>
           </div>
