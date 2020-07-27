@@ -17,7 +17,7 @@ const MUServices = () => {
         <h1 style={{color: `${purple}`}}>Services</h1>
       </div>
 
-      <div className="row align-items-center justify-content-around">
+      <div className="makeup d-flex align-items-center justify-content-around">
         <div className="col-sm-3">
           <div className="title-box d-flex align-items-center justify-content-around flex-column">
             <img src={brushes} alt="makeup brushes"/>
@@ -90,7 +90,7 @@ const Wrapper = styled.div`
     }
   }
 
-  .row {
+  .makeup {
     padding: 30px;
     padding-top: 10px;
   }

@@ -12,7 +12,7 @@ import { lavender } from "../../styles"
 //component
 const Cosplay = () => {
   return (
-    <Wrapper className="row align-items-center justify-content-around">
+    <Wrapper className="d-flex align-items-center justify-content-around">
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-around flex-column">
           <img src={mirror} alt="vanity mirror"/>

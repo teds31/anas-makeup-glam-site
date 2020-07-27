@@ -11,7 +11,7 @@ import { lavender } from "../../styles"
 //component
 const Hair = () => {
   return (
-    <Wrapper className="row d-flex align-items-center justify-content-around">
+    <Wrapper className="d-flex align-items-center justify-content-around">
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-around flex-column">
           <img src={blowdryer} alt="blow dryer"/>

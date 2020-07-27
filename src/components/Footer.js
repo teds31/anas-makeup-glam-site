@@ -11,7 +11,7 @@ import { darkBlue, sapphire } from "../styles"
 //component
 const Footer = () => {
   return (
-    <Wrapper className="row d-flex flex-column align-items-center">
+    <Wrapper className="d-flex flex-column align-items-center">
 
       <div className="d-flex justify-content-center">
         <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
