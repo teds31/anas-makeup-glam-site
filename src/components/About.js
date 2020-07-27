@@ -9,7 +9,7 @@ import stroke from "../images/paint-stroke.png"
 //component
 const About = () => {
   return (
-    <Wrapper id="about">
+    <Wrapper id="about" className="d-flex justify-content-around">
       <div className="img-holder col-lg-6">
         <img src={ana} alt="Ana"/>
       </div>
@@ -36,30 +36,27 @@ const About = () => {
 }
 //component-specific styling
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-
   background-image: url(${stroke});
   background-repeat: no-repeat;
   background-size: contain;
   
   padding: 2rem;
 
-  .img-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  img {
-    height: 285px;
-    border-radius: 10px;
-  }
-
   .col-lg-5 {
     padding: 0;
     padding-top: 20px;
     font-size: 16px;
+  }
+
+  .img-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 285px;
+      border-radius: 10px;
+    }
   }
 `
 //export statement

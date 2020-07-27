@@ -77,6 +77,7 @@ const Wrapper = styled.div`
   button {
     color: ${lavender};
     background-color: ${periwinkle};
+    
     width: 125px;
     height: 45px;
 

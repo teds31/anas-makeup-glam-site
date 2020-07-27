@@ -13,11 +13,11 @@ import { darkBlue, lavender, offBlack } from "../styles"
 
 //component
 const Header = () => (
-  <Wrapper style={{backgroundColor: darkBlue}}>
+  <Wrapper className="d-flex align-items-center justify-content-between" style={{backgroundColor: darkBlue}}>
     <Link to="/">
       <img src={lips} alt="lips" style={{height: "82px", width: "82px", margin: "0px"}} />
     </Link>
-    <div className="btn-holder">
+    <div className="btn-holder d-flex align-items-center">
       <button>Portfolio</button>
       <button><Link to="#services">Services</Link></button>
       <button><Link to="#about">About Me</Link></button>
@@ -36,15 +36,8 @@ Header.defaultProps = {
 
 //component-specific styling
 const Wrapper = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   .btn-holder {
     height: auto;
-
-    display: flex;
-    align-items: center;
 
     a:link, a:visited, a:active {
       color: ${offBlack};

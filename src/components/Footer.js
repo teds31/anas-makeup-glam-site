@@ -40,9 +40,8 @@ const Footer = () => {
 //component-specific styling
 const Wrapper = styled.footer`
   background-color: ${darkBlue};
-  color: white;
 
-  a:link, a:visited, a:active {
+  a:link, a:visited, a:active, p {
     color: white;
   }
 

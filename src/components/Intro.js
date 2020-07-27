@@ -11,7 +11,7 @@ import { sapphire } from "../styles"
 //component
 const Intro = () => {
   return (
-    <Wrapper>
+    <Wrapper className="d-flex align-items-center flex-column">
       <img src={colorLogo} alt="logo" />
       <button>Book Now</button>
     </Wrapper>
@@ -19,17 +19,14 @@ const Intro = () => {
 }
 //component-specific styling
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
   background-color: ${sapphire};
+  
   padding: 2rem;
 
   img {
     width: 450px;
     height: auto;
-    
+
     margin: 25px;
   }
 
