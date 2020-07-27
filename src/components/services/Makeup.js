@@ -7,7 +7,7 @@ import brushes from "../../images/make-up-kit.png"
 import work from "../../images/ana-working.jpg"
 
 //imported colors
-import { purple, lavender } from "../../styles"
+import { purple, lavender, periwinkle, darkBlue, sapphire } from "../../styles"
 
 //component
 const MUServices = () => {
@@ -25,7 +25,7 @@ const MUServices = () => {
           </div>
         </div>
 
-        <div className="col-sm-3">
+        <div style={{color: `${periwinkle}`}} className="col-sm-3">
           <ul>
             <li>Day Makeup / Maquillage de Dia </li>
             <li>Cut Crease (or) Glitter </li>
@@ -35,7 +35,7 @@ const MUServices = () => {
           </ul>
         </div>
 
-        <div className="col-sm-1">
+        <div style={{color: `${darkBlue}`}} className="col-sm-1">
           <ul>
             <li>$50</li>
             <li>$65</li>
@@ -75,6 +75,7 @@ const Wrapper = styled.div`
     }
 
     p {
+      color: ${sapphire};
       margin: 0;
     }
   }

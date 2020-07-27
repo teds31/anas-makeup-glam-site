@@ -6,7 +6,7 @@ import styled from "styled-components"
 import blowdryer from "../../images/hair-dryer.png"
 
 //imported colors
-import { lavender } from "../../styles"
+import { lavender, periwinkle, sapphire } from "../../styles"
 
 //component
 const Hair = () => {
@@ -19,7 +19,7 @@ const Hair = () => {
         </div>
       </div>
 
-      <div className="col-sm-4">
+      <div style={{color: `${periwinkle}`}} className="col-sm-4">
         <p>Looking to have your hair your glow up?</p>
         <p>I also provide consultations for styling and beauty. Look your very best at any event, or just a lovely night out on the town! Please inquire about how my consultations work.</p>
       </div>
@@ -55,6 +55,7 @@ const Wrapper = styled.div`
 
     p {
       margin: 0;
+      color: ${sapphire};
     }
   }
 `

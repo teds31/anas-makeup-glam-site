@@ -6,11 +6,11 @@ import stroke from "../images/paint-stroke.png"
 const About = () => {
   return (
     <Wrapper>
-      <div className="img-holder col-lg-3">
+      <div className="img-holder col-lg-6">
         <img src={ana} alt="Ana"/>
       </div>
 
-      <div className="col-lg-6">
+      <div className="col-lg-5">
         <p>
           Hello, my name is Ana and I'm a certified makeup artist based in beautiful Las Vegas, Nevada.
         </p>

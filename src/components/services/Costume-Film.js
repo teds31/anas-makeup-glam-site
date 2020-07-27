@@ -7,7 +7,7 @@ import mirror from "../../images/mirror.png"
 import joker from "../../images/joker.jpg"
 
 //imported colors
-import { lavender } from "../../styles"
+import { lavender, periwinkle, sapphire } from "../../styles"
 
 //component
 const Cosplay = () => {
@@ -21,7 +21,7 @@ const Cosplay = () => {
       </div>
 
       <div className="col-sm-4">
-        <p>I also provide makeup artistry for costumes, cosplay and film. No matter the season, whether it's Halloween or Comi-Con, or looking to highlight your characters in your film or play, I can help you realize your costume.</p>
+        <p style={{color: `${periwinkle}`}}>I also provide makeup artistry for costumes, cosplay and film. No matter the season, whether it's Halloween or Comi-Con, or looking to highlight your characters in your film or play, I can help you realize your costume.</p>
       </div>
 
       <div className="col-sm-4 d-flex justify-content-center">
@@ -55,6 +55,7 @@ const Wrapper = styled.div`
     }
 
     p {
+      color: ${sapphire};
       margin: 0;
     }
   }
