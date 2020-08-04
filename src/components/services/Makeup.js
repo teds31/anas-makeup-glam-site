@@ -7,16 +7,12 @@ import brushes from "../../images/make-up-kit.png"
 import work from "../../images/ana-working.jpg"
 
 //imported colors
-import { purple, lavender, periwinkle, darkBlue, sapphire } from "../../styles"
+import { lavender, periwinkle, darkBlue, sapphire } from "../../styles"
 
 //component
-const MUServices = () => {
+const Makeup = () => {
   return (
-    <Wrapper id="services" className="d-flex flex-column">
-      <div className="col-sm-12 d-flex justify-content-center" style={{padding: "25px"}}>
-        <h1 style={{color: `${purple}`}}>Services</h1>
-      </div>
-
+    <Wrapper>
       <div className="makeup d-flex align-items-center justify-content-around">
         <div className="col-sm-3">
           <div className="title-box d-flex align-items-center justify-content-center flex-column">
@@ -35,7 +31,7 @@ const MUServices = () => {
           </ul>
         </div>
 
-        <div style={{color: `${darkBlue}`}} className="col-sm-1">
+        <div style={{color: `${darkBlue}`}} className="col-sm-1 text-right">
           <ul>
             <li>$50</li>
             <li>$65</li>
@@ -97,4 +93,4 @@ const Wrapper = styled.div`
   }
 `
 //export statement
-export default MUServices
+export default Makeup

@@ -2,14 +2,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-
 import { Link } from "gatsby"
 
 //imported images
 import lips from "../images/logos/lips.png"
 
 //imported colors
-import { darkBlue, lavender, offBlack } from "../styles"
+import { darkBlue, lavender, purple } from "../styles"
 
 //component
 const Header = () => (
@@ -18,10 +17,10 @@ const Header = () => (
       <img src={lips} alt="lips" style={{height: "82px", width: "82px", margin: "0px"}} />
     </Link>
     <div className="btn-holder d-flex align-items-center">
-      <button>Portfolio</button>
+      <button><Link to="/portfolio">Portfolio</Link></button>
       <button><Link to="#services">Services</Link></button>
       <button><Link to="#about">About Me</Link></button>
-      <button>Contact</button>
+      <button><Link to="#contact">Contact</Link></button>
     </div>
   </Wrapper>
 )
@@ -39,27 +38,27 @@ const Wrapper = styled.header`
   .btn-holder {
     height: auto;
 
-    a:link, a:visited, a:active {
-      color: ${offBlack};
-    }
+    button {
+      background-color: ${lavender};
+      color: black;
   
-    a:hover {
-      color: white;
-      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+  
+      height: 30px;
+      width: 100px;
+  
+      margin: 15px;
+
+      a:link, a:visited, a:active {
+        color: white;
+      }
+    
+      a:hover {
+        color: ${purple};
+        text-decoration: none;
+      }
     }
-  }
-
-  button {
-    background-color: ${lavender};
-    color: black;
-
-    border: none;
-    border-radius: 4px;
-
-    height: 30px;
-    width: 100px;
-
-    margin: 15px;
   }
 `
 

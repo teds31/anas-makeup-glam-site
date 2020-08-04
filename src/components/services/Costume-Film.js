@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 //imported images
 import mirror from "../../images/mirror.png"
-import joker from "../../images/joker.jpg"
+import joker from "../../looks/joker.jpg"
 
 //imported colors
 import { lavender, periwinkle, sapphire } from "../../styles"
@@ -21,7 +21,7 @@ const Cosplay = () => {
         </div>
       </div>
 
-      <div className="col-sm-4">
+      <div className="col-sm-4 text-center">
         <p style={{color: `${periwinkle}`}}>I also provide makeup artistry for costumes, cosplay and film. No matter the season, whether it's Halloween or Comi-Con, or looking to highlight your characters in your film or play, I can help you realize your costume.</p>
       </div>
 

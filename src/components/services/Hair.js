@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 //imported images
 import blowdryer from "../../images/hair-dryer.png"
+import hair from "../../looks/hair-and-makeup.png"
 
 //imported colors
 import { lavender, periwinkle, sapphire } from "../../styles"
@@ -19,13 +20,13 @@ const Hair = () => {
         </div>
       </div>
 
-      <div style={{color: `${periwinkle}`}} className="col-sm-4">
+      <div style={{color: `${periwinkle}`}} className="col-sm-4 text-center">
         <p>Looking to have your hair your glow up?</p>
         <p>I also provide consultations for styling and beauty. Look your very best at any event, or just a lovely night out on the town! Please inquire about how my consultations work.</p>
       </div>
 
       <div className="col-sm-4 d-flex justify-content-center">
-        <img alt="placeholder" src="https://www.placehold.it/200x200" style={{borderRadius: "15px", height: "225px", width: "auto"}} />
+        <img alt="placeholder" src={hair} style={{borderRadius: "15px", height: "225px", width: "auto"}} />
       </div>
     </Wrapper>
   )

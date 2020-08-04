@@ -1,29 +1,30 @@
 //imported dependencies
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 //imported colors
-import { lavender, periwinkle } from "../styles"
+import { lavender, purple } from "../../styles"
 
 //imported images
-import gold from "../images/gold-dress.jpeg"
-import red from "../images/red-dress-3.jpg"
-import wedding from "../images/wedding-1.jpg"
-import white from "../images/white-dress-5.jpg"
-import weddingTwo from "../images/wedding-dress.jpg"
+import gold from "../../looks/gold-dress.jpeg"
+import red from "../../looks/red-dress-3.jpg"
+import wedding from "../../looks/wedding-1.jpg"
+import white from "../../looks/white-dress-5.jpg"
+import weddingTwo from "../../looks/wedding-dress.jpg"
 
 //component
 const Mini = () => {
   return (
     <Wrapper className="d-flex align-items-center flex-column">
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-center flex-wrap-wrap align-items-center">
         <div className="pic-one"></div>
         <div className="pic-two"></div>
         <div className="pic-three"></div>
         <div className="pic-four"></div>
         <div className="pic-five"></div>
       </div>
-      <button>Portfolio</button>
+      <button><Link to="/portfolio">Portfolio</Link></button>
     </Wrapper>
   )
 }
@@ -75,14 +76,22 @@ const Wrapper = styled.div`
   }
 
   button {
-    color: ${lavender};
-    background-color: ${periwinkle};
+    background-color: white;
     
     width: 125px;
     height: 45px;
 
     border: none;
     border-radius: 5px;
+    
+    a:link, a:visited, a:active {
+      color: ${lavender};
+    }
+  
+    a:hover {
+      color: ${purple};
+      text-decoration: none;
+    }
   }
 `
 //export statement

@@ -4,16 +4,16 @@ import styled from "styled-components"
 
 //imported icons
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaYoutube } from "react-icons/fa"
+import { FiGithub } from "react-icons/fi"
 
 //imported colors
-import { darkBlue, sapphire } from "../styles"
+import { darkBlue, periwinkle } from "../styles"
 
 //component
 const Footer = () => {
   return (
-    <Wrapper className="d-flex flex-column align-items-center">
-
-      <div className="d-flex justify-content-center">
+    <Wrapper className="row justify-content-center align-items-center flex-column">
+      <div className="justify-content-center">
         <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
           <FaFacebookSquare className="icon" />
         </a>
@@ -30,10 +30,10 @@ const Footer = () => {
           <FaYoutube className="icon" />
         </a>
       </div>
-
+      
       <p>702-381-3158 | booking@anasmakeupglam.com</p>
 
-      <p>© {new Date().getFullYear()}</p>
+      <p><a href="https://github.com/girafffene" rel="noopener noreferrer" target="_blank" ><FiGithub /> girafffene </a>© {new Date().getFullYear()}</p>
     </Wrapper>
   )
 }
@@ -41,12 +41,16 @@ const Footer = () => {
 const Wrapper = styled.footer`
   background-color: ${darkBlue};
 
+  a {
+    text-decoration: none;
+  }
+
   a:link, a:visited, a:active, p {
     color: white;
   }
 
   a:hover {
-    color: ${sapphire};
+    color: ${periwinkle};
   }
 
   .icon {

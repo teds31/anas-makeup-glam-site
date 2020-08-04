@@ -1,19 +1,20 @@
 //imported dependencies
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 //imported image
 import colorLogo from "../images/logos/color-logo-transparent.png"
 
 //imported colors
-import { sapphire } from "../styles"
+import { sapphire, lavender, purple } from "../styles"
 
 //component
 const Intro = () => {
   return (
     <Wrapper className="d-flex align-items-center flex-column">
       <img src={colorLogo} alt="logo" />
-      <button>Book Now</button>
+      <button><Link to="#contact">Book Now</Link></button>
     </Wrapper>
   )
 }
@@ -31,7 +32,7 @@ const Wrapper = styled.div`
   }
 
   button {
-    background-color: white;
+    background-color: ${lavender};
 
     width: 110px;
     height: 35px;
@@ -40,6 +41,15 @@ const Wrapper = styled.div`
     border-radius: 5px;
 
     font-size: 18px;
+
+    a:link, a:visited, a:active {
+      color: white;
+    }
+  
+    a:hover {
+      color: ${purple};
+      text-decoration: none;
+    }
   }
 `
 //export statement

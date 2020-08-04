@@ -6,6 +6,8 @@ import styled from "styled-components"
 import ana from "../images/ana.jpg"
 import stroke from "../images/paint-stroke.png"
 
+import { purple } from "../styles"
+
 //component
 const About = () => {
   return (
@@ -41,6 +43,8 @@ const Wrapper = styled.div`
   background-size: contain;
   
   padding: 2rem;
+
+  color: ${purple};
 
   .col-lg-5 {
     padding: 0;
