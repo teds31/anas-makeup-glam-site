@@ -166,6 +166,7 @@ const Wrapper = styled.div`
   button {
     background-color: ${purple};
     padding: 5px;
+    margin-top: 20px;
     color: white;
     border-radius: 5px;
     width: 220px;
