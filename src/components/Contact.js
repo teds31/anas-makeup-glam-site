@@ -98,23 +98,19 @@ const Contact = () => {
   }
   
   return (
-    <Wrapper id="contact" className="row flex-column align-items-center justify-content-center flex-wrap">
+    <Wrapper id="contact" className="d-flex flex-column align-items-center justify-content-center flex-wrap">
       <h1 style={{color: `${purple}`, marginBottom: "15px", fontSize: "3rem"}}>Contact Me</h1>
 
       <p>Ready to get glammed up or have any questions? Call or send me a message!</p>
 
-      <form action="https://formspree.io/xbjzqboy" method="POST" onSubmit={onSubmit} className="flex-wrap text-center justify-content-evenly" >
-        <label className={nameError ? "error" : ""} htmlFor="name">{nameError && nameError}</label>
-        <input id="name" className={nameError ? "input-error" : ""} type="text" name="name" placeholder="name" onChange={e => setName(e.target.value)} />
+      <form action="https://formspree.io/xbjzqboy" method="POST" onSubmit={onSubmit} className="d-flex flex-wrap flex-column align-items-center text-center justify-content-center" >
+        <input id="name" className={nameError ? "input-error" : ""} type="text" name="name" placeholder={nameError ? "please enter your name" : "Name :"} onChange={e => setName(e.target.value)} />
 
-        <label className={emailError ? "error" : ""} htmlFor="email">{emailError && emailError}</label>
-        <input id="email" className={nameError ? "input-error" : ""} type="email" name="email" placeholder="email" onChange={e => setEmail(e.target.value)} /> 
+        <input id="email" className={nameError ? "input-error" : ""} type="email" name="email" placeholder={emailError ? "please enter a valid email" : "Email :"} onChange={e => setEmail(e.target.value)} /> 
 
-        <label className={subjectError ? "error" : ""} htmlFor="subject">{subjectError && subjectError}</label>
-        <input style={{width: "450px"}} className={nameError ? "input-error" : ""} type="text" name="subject" placeholder="subject" onChange={e => setSubject(e.target.value)} />
+        <input className={nameError ? "input-error" : ""} type="text" name="subject" placeholder={subjectError ? "please enter a subject" :"Subject :"} onChange={e => setSubject(e.target.value)} />
         
-        <label className={messageError ? "error" : ""} htmlFor="message">{messageError && messageError}</label>
-        <textarea className={nameError ? "input-error" : ""} name="message" placeholder="type your message here:" onChange={e => setMessage(e.target.value)} />
+        <textarea className={messageError ? "input-error" : ""} name="message" placeholder={messageError ? "please enter a message" : "type your message here :"} onChange={e => setMessage(e.target.value)} />
 
         {status === "SUCCESS" ? <p>Thanks! Your message has been submitted.</p> : <button type="submit">Send</button>}
       </form>
@@ -127,8 +123,6 @@ const Wrapper = styled.div`
   color: ${sapphire};
 
   form {
-    display: flex;
-    width: 500px;
     margin: 20px;
   }
 
@@ -136,7 +130,8 @@ const Wrapper = styled.div`
     margin: 15px;
     border: none;
     border-bottom: 1px solid ${purple};
-    padding: 5px;
+    padding: 10px 5px 5px 15px;
+    width: 220px;
 
     ::placeholder {
       color: ${sapphire};
@@ -149,18 +144,23 @@ const Wrapper = styled.div`
     border-radius: 5px;
   }
 
-  textarea {
-    resize: none;
-    overflow: scroll;
-    width: 450px;
+  input {
+    height: 50px;
   }
 
-  #name, #email {
-    width: 210px;
+  textarea {
+    height: 100px;
+    resize: none;
+    overflow: scroll;
   }
 
   .input-error {
+    border-radius: 5px;
     border: 1px solid red;
+
+    ::placeholder {
+      color: red;
+    }
   }
 
   button {
@@ -168,10 +168,9 @@ const Wrapper = styled.div`
     padding: 5px;
     color: white;
     border-radius: 5px;
-    width: 95px;
+    width: 220px;
     border: none;
-    position: relative;
-    left: 14px;
+    float: left;
   }
 `
 

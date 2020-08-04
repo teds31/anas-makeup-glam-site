@@ -6,12 +6,12 @@ import styled from "styled-components"
 import ana from "../images/ana.jpg"
 import stroke from "../images/paint-stroke.png"
 
-import { purple } from "../styles"
+import { sapphire } from "../styles"
 
 //component
 const About = () => {
   return (
-    <Wrapper id="about" className="d-flex justify-content-around">
+    <Wrapper id="about" className="d-flex justify-content-around flex-wrap">
       <div className="img-holder col-lg-6">
         <img src={ana} alt="Ana"/>
       </div>
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   
   padding: 2rem;
 
-  color: ${purple};
+  color: ${sapphire};
 
   .col-lg-5 {
     padding: 0;

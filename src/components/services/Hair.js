@@ -12,7 +12,7 @@ import { lavender, periwinkle, sapphire } from "../../styles"
 //component
 const Hair = () => {
   return (
-    <Wrapper className="d-flex align-items-center justify-content-around">
+    <Wrapper className="d-flex align-items-center justify-content-around flex-wrap">
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={blowdryer} alt="blow dryer"/>
@@ -20,7 +20,7 @@ const Hair = () => {
         </div>
       </div>
 
-      <div style={{color: `${periwinkle}`}} className="col-sm-4 text-center">
+      <div style={{color: `${periwinkle}`, margin: "25px 0px"}} className="col-sm-4 text-center">
         <p>Looking to have your hair your glow up?</p>
         <p>I also provide consultations for styling and beauty. Look your very best at any event, or just a lovely night out on the town! Please inquire about how my consultations work.</p>
       </div>

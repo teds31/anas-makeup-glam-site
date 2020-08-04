@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   padding: 2rem;
 
   img {
-    width: 450px;
+    width: 415px;
     height: auto;
 
     margin: 25px;

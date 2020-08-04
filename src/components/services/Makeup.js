@@ -13,7 +13,10 @@ import { lavender, periwinkle, darkBlue, sapphire } from "../../styles"
 const Makeup = () => {
   return (
     <Wrapper>
-      <div className="makeup d-flex align-items-center justify-content-around">
+      <div className="col-sm-12 d-flex justify-content-center" style={{padding: "25px"}}>
+        <h1 style={{color: `${sapphire}`, fontSize: "3rem"}}>Services</h1>
+      </div>
+      <div className="makeup d-flex align-items-center justify-content-around flex-wrap">
         <div className="col-sm-3">
           <div className="title-box d-flex align-items-center justify-content-center flex-column">
             <img src={brushes} alt="makeup brushes"/>
@@ -21,23 +24,13 @@ const Makeup = () => {
           </div>
         </div>
 
-        <div style={{color: `${periwinkle}`}} className="col-sm-3">
+        <div style={{padding: "5px", color: `${periwinkle}`}} className="col-sm-4">
           <ul>
-            <li>Day Makeup / Maquillage de Dia </li>
-            <li>Cut Crease (or) Glitter </li>
-            <li>Full Eye Glam / Glamour Completo </li>
-            <li>Photo Shoots / Sección de Fotografía </li>
-            <li>Strip Lashes / Pestañas </li>
-          </ul>
-        </div>
-
-        <div style={{color: `${darkBlue}`}} className="col-sm-1 text-right">
-          <ul>
-            <li>$50</li>
-            <li>$65</li>
-            <li>$75</li>
-            <li>$75</li>
-            <li>$10</li>
+            <li>Day Makeup / Maquillage de Dia: <span>$50</span> </li>
+            <li>Cut Crease (or) Glitter: <span>$65</span> </li>
+            <li>Full Eye Glam / Glamour Completo: <span>$75</span> </li>
+            <li>Photo Shoots / Sección de Fotografía: <span>$75</span> </li>
+            <li>Strip Lashes / Pestañas: <span>$10</span> </li>
           </ul>
         </div>
 
@@ -76,10 +69,15 @@ const Wrapper = styled.div`
     }
   }
 
+  span {
+    color: ${darkBlue};
+    float: right;
+  }
+
   ul {
     list-style: none;
 
-    margin: 0px;
+    margin: 25px 0px;
     padding: 0px;
 
     li {

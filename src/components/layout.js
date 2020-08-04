@@ -11,7 +11,7 @@ import Footer from "./Footer"
 //imported stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { FaArrowCircleUp } from "react-icons/fa"
+// import { FaArrowCircleUp } from "react-icons/fa"
 
 import { lavender } from "../styles"
 

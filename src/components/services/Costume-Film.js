@@ -12,7 +12,7 @@ import { lavender, periwinkle, sapphire } from "../../styles"
 //component
 const Cosplay = () => {
   return (
-    <Wrapper className="d-flex align-items-center justify-content-around">
+    <Wrapper className="d-flex align-items-center justify-content-around flex-wrap">
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={mirror} alt="vanity mirror"/>
@@ -21,7 +21,7 @@ const Cosplay = () => {
         </div>
       </div>
 
-      <div className="col-sm-4 text-center">
+      <div className="col-sm-4 text-center" style={{margin: "25px 0px"}}>
         <p style={{color: `${periwinkle}`}}>I also provide makeup artistry for costumes, cosplay and film. No matter the season, whether it's Halloween or Comi-Con, or looking to highlight your characters in your film or play, I can help you realize your costume.</p>
       </div>
 

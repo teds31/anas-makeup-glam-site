@@ -17,7 +17,7 @@ import weddingTwo from "../../looks/wedding-dress.jpg"
 const Mini = () => {
   return (
     <Wrapper className="d-flex align-items-center flex-column">
-      <div className="d-flex justify-content-center flex-wrap-wrap align-items-center">
+      <div className="d-flex justify-content-center flex-wrap align-items-center">
         <div className="pic-one"></div>
         <div className="pic-two"></div>
         <div className="pic-three"></div>
