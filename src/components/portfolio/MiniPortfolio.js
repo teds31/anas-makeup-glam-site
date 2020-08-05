@@ -10,7 +10,7 @@ import { lavender, purple } from "../../styles"
 import gold from "../../looks/gold-dress.jpeg"
 import red from "../../looks/red-dress-3.jpg"
 import wedding from "../../looks/wedding-1.jpg"
-import whiteDress from "../../looks/white-dress-5.JPG"
+import whiteDress from "../../looks/white-dress-5.jpg"
 import weddingTwo from "../../looks/wedding-dress.jpg"
 
 //component
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
     background-image: url(${whiteDress});
     background-size: 415px;
     background-position-x: -95px;
-    background-position-y: -10px;
+    background-position-y: -10px;c
   }
 
   .pic-five {
