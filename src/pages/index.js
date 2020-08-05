@@ -10,19 +10,19 @@ import Services from "../components/services/Services"
 import Quote from "../components/QuoteBanner"
 import Contact from "../components/Contact"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <main>
-      <Intro />
-      <About />
-      <Mini />
-      <Testimonials />
-      <Services />
-      <Quote />
-      <Contact />
-    </main>
-  </Layout>
-)
-
-export default IndexPage
+export default () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <main>
+        <Intro />
+        <About />
+        <Mini />
+        <Testimonials />
+        <Services />
+        <Quote />
+        <Contact />
+      </main>
+    </Layout>
+  )
+}
