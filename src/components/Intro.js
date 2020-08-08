@@ -22,7 +22,7 @@ const Intro = () => {
 const Wrapper = styled.div`
   background-color: ${sapphire};
   
-  padding: 2rem;
+  padding: 3.5rem;
 
   img {
     width: 415px;
