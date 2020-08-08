@@ -75,6 +75,12 @@ const Wrapper = styled.div`
     background-position-y: -15px;
   }
 
+  @media only screen and (max-width: 600px) {
+    .pic-four, .pic-five {
+      display: none;
+    }
+  }
+
   button {
     background-color: white;
     
