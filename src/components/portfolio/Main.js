@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Image from 'gatsby-image';
+// import PropTypes from 'prop-types';
+// import Image from 'gatsby-image';
 import styled from "styled-components"
 
-const Main = ({ mupics }) => {
+const Main = () => {
   return (
     <Wrapper>
       <p>hi</p>
