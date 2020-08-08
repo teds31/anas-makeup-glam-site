@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 //imported icons
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaYoutube } from "react-icons/fa"
-import { FiGithub } from "react-icons/fi"
+import { RiHeartsLine } from "react-icons/ri"
 
 //imported colors
 import { darkBlue, periwinkle } from "../styles"
@@ -33,7 +33,7 @@ const Footer = () => {
       
       <p>702-381-3158 | booking@anasmakeupglam.com</p>
 
-      <p><a href="https://github.com/girafffene" rel="noopener noreferrer" target="_blank" ><FiGithub /> girafffene </a>© {new Date().getFullYear()}</p>
+      <p>© {new Date().getFullYear()}, Made with <span><RiHeartsLine /></span> by <a href="https://www.linkedin.com/in/irene-perez-a65682154/" rel="noopener noreferrer" target="_blank" >Irene Perez </a></p>
     </Wrapper>
   )
 }
@@ -56,6 +56,13 @@ const Wrapper = styled.footer`
   .icon {
     font-size: 30px;
     margin: 15px;
+  }
+
+  span {
+    color: crimson;
+    font-size: 20px;
+    position: relative;
+    bottom: 1px;
   }
 `
 //export statement
