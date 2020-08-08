@@ -69,6 +69,7 @@ const LightBoxContainer = styled.div`
 `
 
 const PreviewButton = styled.button`
+  display: contents;
   background-color: transparent;
   border: none;
   margin: 0;
