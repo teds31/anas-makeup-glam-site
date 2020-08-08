@@ -44,6 +44,10 @@ const Wrapper = styled.div`
   
   padding: 2rem;
 
+  @media only screen and (max-width: 600px) {
+    padding-top: 4rem;
+  }
+
   color: ${sapphire};
 
   .col-lg-5 {
