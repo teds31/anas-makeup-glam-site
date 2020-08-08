@@ -4,6 +4,8 @@ import Image from 'gatsby-image';
 import styled from "styled-components"
 import { Dialog } from "@reach/dialog"
 import '@reach/dialog/styles.css';
+import { FaRegWindowClose } from "react-icons/fa"
+import {darkBlue} from "../../styles"
 
 const Main = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +14,7 @@ const Main = () => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 500,) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -31,22 +33,21 @@ const Main = () => {
       <LightBoxContainer>
         {data.makeupImages.edges.map((img) => {
           return (
-            <PreviewButton key={img.node.childImageSharp.fluid.src} aria-label="open dialog box" type="button" onClick={() => {
+            <PreviewButton key={img.node.childImageSharp.fluid.src} type="button" onClick={() => {
               setSelectedImg(img);
               setShowLightbox(true);
             }}>
-              <Image fluid={img.node.childImageSharp.fluid} key={img.node.childImageSharp.fluid.src} />
+              <Image fluid={img.node.childImageSharp.fluid} key={img.node.childImageSharp.fluid.src} loading="auto"/>
             </PreviewButton>
           )
         })}
       </LightBoxContainer>
       {showLightbox && (
-        <Dialog aria-label="lightbox for portfolio">
-          <Image fluid={selectedImg.node.childImageSharp.fluid} />
-          {console.log(selectedImg)}
-          <button type="button" aria-label="close dialog box" onClick={() => setShowLightbox(false)}>
-            Close
+        <Dialog style={{backgroundColor: `${darkBlue}`, paddingRight: "0"}} aria-label="lightbox for portfolio">
+          <button style={{backgroundColor: "transparent", border: "none", color: "white", fontSize: "25px", float: "right", outlineStyle: "none"}} type="button" onClick={() => setShowLightbox(false)}>
+            <FaRegWindowClose />
           </button>
+          <Image fluid={selectedImg.node.childImageSharp.fluid} />
         </Dialog>
       )}
     </Wrapper>
@@ -61,13 +62,11 @@ const Wrapper = styled.div`
     font-size: 3rem;
   }
 `
-
 const LightBoxContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
 `
-
 const PreviewButton = styled.button`
   display: contents;
   background-color: transparent;
