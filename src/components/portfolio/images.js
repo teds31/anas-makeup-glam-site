@@ -1,26 +1,23 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Main from './Main';
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const Images = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        makeupImages: allFile(filter: {sourceInstanceName: { eq: "looks" }}) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth:2000) {
-                  ...GatsbyImageSharpFluid
-                }
+const Images = () => {
+  const data = useStaticQuery(graphql`
+    {
+      makeupImages: allFile(filter: {sourceInstanceName: {eq: "looks"}}) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
       }
-    `}
-    render={data => <Main makeupImages={data.makeupImages.edges} />}
-  />
-);
+    }
+  `)
+  return <pre>{JSON.stringify(data, null, 4)}</pre>
+}
 
-export default Images;
+export default Images
