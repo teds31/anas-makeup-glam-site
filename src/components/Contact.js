@@ -130,8 +130,8 @@ const Wrapper = styled.div`
     margin: 15px;
     border: none;
     border-bottom: 1px solid ${purple};
+    width: 500px;
     padding: 10px 5px 5px 15px;
-    width: 220px;
 
     ::placeholder {
       color: ${sapphire};
@@ -172,6 +172,13 @@ const Wrapper = styled.div`
     width: 220px;
     border: none;
     float: left;
+  }
+
+  @media only screen and (max-width: 600px) {
+    input, textarea {
+      width: 220px;
+      padding: 10px 5px 5px 15px;
+    }
   }
 `
 
