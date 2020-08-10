@@ -3,6 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
+import ScrollToTop from "react-scroll-up"
 
 //imported components
 import Navbar from "./navbar/Navbar"
@@ -11,7 +12,7 @@ import Footer from "./Footer"
 //imported stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import { FaArrowCircleUp } from "react-icons/fa"
+import { FaArrowCircleUp } from "react-icons/fa"
 
 import { lavender } from "../styles"
 
@@ -27,32 +28,14 @@ const Layout = ({ children }) => {
     }
   `)
 
-  // function scrollFunction() {
-  //   //grabbing button
-  //   const mybutton = document.getElementById("myBtn");
-
-  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //     mybutton.style.display = "block";
-  //   } else {
-  //     mybutton.style.display = "none";
-  //   }
-  // }
-
-  // // When the user scrolls down 20px from the top of the document, show the button
-  // window.onscroll = function() {scrollFunction()};
-
-  // // When the user clicks on the button, scroll to the top of the document
-  // function topFunction() {
-  //   document.body.scrollTop = 0; // For Safari
-  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  // }
-
   return (
     <Wrapper>
        <Navbar siteTitle={data.site.siteMetadata.title}/> 
         <main>
           {children}
-          {/* <button onClick={topFunction} alt="scroll to top" id="myBtn"><FaArrowCircleUp /></button> */}
+          <ScrollToTop  showUnder={160}>
+            <span id="myBtn"><FaArrowCircleUp /></span>
+          </ScrollToTop>
         </main>
       <Footer />
     </Wrapper>
@@ -68,32 +51,8 @@ const Wrapper = styled.div`
   }
 
   #myBtn {
-    display: none; 
-
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-
-    z-index: 99; 
-
-    border: none; 
-    border-radius: 100%;
-
-    outline: none; 
-
-    background-color: white;
     color: ${lavender};
-
-    cursor: pointer;
-
-    height: 40px;
-    width: 40px;
-
-    font-size: 25px; 
-  }
-
-  #myBtn:hover {
-    background-color: #555;
+    font-size: 30px; 
   }
 `
 
