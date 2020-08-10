@@ -25,10 +25,10 @@ const Wrapper = styled.div`
   padding: 3.5rem;
 
   img {
-    width: 415px;
+    width: 365px;
     height: auto;
 
-    margin: 25px;
+    margin: 35px;
   }
 
   button {

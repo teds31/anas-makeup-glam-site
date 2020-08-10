@@ -3,12 +3,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Burger from "./Burger"
 
 //imported images
-import lips from "../images/logos/lips.png"
+import lips from "../../images/logos/lips.png"
 
 //imported colors
-import { darkBlue, lavender, purple } from "../styles"
+import { darkBlue, lavender, purple } from "../../styles"
 
 //component
 const Header = () => (
@@ -16,12 +17,7 @@ const Header = () => (
     <Link to="/">
       <img src={lips} alt="lips" style={{height: "82px", width: "82px", margin: "0px"}} />
     </Link>
-    <div className="btn-holder d-flex align-items-center">
-      <button><Link to="/portfolio">Portfolio</Link></button>
-      <button><Link to="#services">Services</Link></button>
-      <button><Link to="#about">About Me</Link></button>
-      <button><Link to="#contact">Contact</Link></button>
-    </div>
+    <Burger />
   </Wrapper>
 )
 

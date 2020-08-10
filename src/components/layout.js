@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 //imported components
-import Header from "./header"
+import Navbar from "./navbar/Navbar"
 import Footer from "./Footer"
 
 //imported stylesheets
@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
 
   return (
     <Wrapper>
-       <Header siteTitle={data.site.siteMetadata.title}/> 
+       <Navbar siteTitle={data.site.siteMetadata.title}/> 
         <main>
           {children}
           {/* <button onClick={topFunction} alt="scroll to top" id="myBtn"><FaArrowCircleUp /></button> */}
