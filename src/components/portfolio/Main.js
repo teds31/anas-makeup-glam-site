@@ -43,8 +43,8 @@ const Main = () => {
         })}
       </LightBoxContainer>
       {showLightbox && (
-        <Dialog style={{backgroundColor: `${darkBlue}`, paddingRight: "0"}} aria-label="lightbox for portfolio">
-          <button style={{backgroundColor: "transparent", border: "none", color: "white", fontSize: "25px", float: "right", outlineStyle: "none"}} type="button" onClick={() => setShowLightbox(false)}>
+        <Dialog style={{backgroundColor: "white", paddingRight: "0"}} aria-label="lightbox for portfolio">
+          <button style={{backgroundColor: "transparent", border: "none", color: `${darkBlue}`, fontSize: "25px", float: "right", outlineStyle: "none"}} type="button" onClick={() => setShowLightbox(false)}>
             <FaRegWindowClose />
           </button>
           <Image fluid={selectedImg.node.childImageSharp.fluid} />

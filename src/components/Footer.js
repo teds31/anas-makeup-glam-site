@@ -31,7 +31,7 @@ const Footer = () => {
         </a>
       </div>
       
-      <p>702-381-3158 | booking@anasmakeupglam.com</p>
+      <p><a href="tel:702-381-3158">702)381-3158</a> | <a href="mailto: booking@anasmakeupglam.com">booking@anasmakeupglam.com</a></p>
 
       <p>© {new Date().getFullYear()}, Made with <span><RiHeartsLine /></span> by <a href="https://www.linkedin.com/in/irene-perez-a65682154/" rel="noopener noreferrer" target="_blank" >Irene Perez </a></p>
     </Wrapper>

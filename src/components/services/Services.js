@@ -8,7 +8,7 @@ import Cosplay from "./Costume-Film"
 
 const Services = () => {
   return (
-    <Wrapper>
+    <Wrapper id="services">
       <Makeup />
       <Hair />
       <Cosplay />
