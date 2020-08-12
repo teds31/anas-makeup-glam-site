@@ -91,11 +91,10 @@ const Wrapper = styled.div`
     border-radius: 5px;
     
     a:link, a:visited, a:active {
-      color: ${lavender};
+      color: ${purple};
     }
   
-    a:hover {
-      color: ${purple};
+    a {
       text-decoration: none;
     }
   }

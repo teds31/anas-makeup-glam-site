@@ -45,11 +45,10 @@ const Wrapper = styled.div`
     text-transform: uppercase;
 
     a:link, a:visited, a:active {
-      color: white;
+      color: ${purple};
     }
   
-    a:hover {
-      color: ${purple};
+    a {
       text-decoration: none;
     }
   }

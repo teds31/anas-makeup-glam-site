@@ -46,16 +46,12 @@ const Wrapper = styled.header`
   
       margin: 15px;
 
+      a {
+        text-decoration: none;
+      }
+
       a:link, a:visited, a:active {
         color: ${purple};
-      }
-    
-      button:hover {
-        background-color: ${purple};
-        a:hover {
-          color: white;
-          text-decoration: none;
-        }
       }
     }
   }
