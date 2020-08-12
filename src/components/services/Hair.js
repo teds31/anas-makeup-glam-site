@@ -16,7 +16,7 @@ const Hair = () => {
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={blowdryer} alt="blow dryer"/>
-          <p>Hair Styling Consultations</p>
+          <p className="title">Hair Styling Consultations</p>
         </div>
       </div>
 

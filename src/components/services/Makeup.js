@@ -20,7 +20,7 @@ const Makeup = () => {
         <div className="col-sm-3">
           <div className="title-box d-flex align-items-center justify-content-center flex-column">
             <img src={brushes} alt="makeup brushes"/>
-            <p>Makeup Glam</p>
+            <p className="title">Makeup Glam</p>
           </div>
         </div>
 
@@ -57,6 +57,7 @@ const Wrapper = styled.div`
 
     li {
       margin: 10px;
+      font-size: 1.25rem;
     }
   }
 

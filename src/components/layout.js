@@ -45,19 +45,12 @@ const Layout = ({ children }) => {
 const Wrapper = styled.div`
   overflow-x: hidden;
   font-family: Font Two;
+  p {
+    font-size: 1.25rem;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: Font One;
-  }
-
-  body {
-    p {
-      font-size: 1.25rem
-    }
-
-    button {
-      height: 37px;
-    }
   }
 
   #myBtn {

@@ -16,8 +16,8 @@ const Cosplay = () => {
       <div className="col-sm-3">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={mirror} alt="vanity mirror"/>
-          <p>Costume</p>
-          <p>& Film</p>
+          <p className="title">Costume</p>
+          <p className="title">& Film</p>
         </div>
       </div>
 

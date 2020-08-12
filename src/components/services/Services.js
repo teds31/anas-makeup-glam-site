@@ -22,6 +22,9 @@ const Services = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  .title {
+    font-size: 2rem;
+  }
 
   .title-box {
     background-color: ${lavender};
