@@ -29,9 +29,6 @@ const About = () => {
           I know that makeup is my art and the human face is my canvas. I am intrested by every person I see, and harmonizing their inner beauty. I've had the pleasure of working with brides and models from <em>Quinceañera magazine</em>, Expos and Foundations for Runways, beauty pageants and photo shoots.
         </p>
 
-        <p>
-          I offer makeup services for special occasions, such as weddings, quinceañeras, or even putting your stamp on the world with a photoshoot; I bring professional high-end services to fit your needs. I always stay informed on the latest makeup trends that will bring your inner <strong>you</strong> out. Work with me and I will ensure quality, safety, and always an enjoyable, relaxing experience each time you book with me. Let me transform you into the best possible you.
-        </p>
       </div>
     </Wrapper>
   )
@@ -40,9 +37,10 @@ const About = () => {
 const Wrapper = styled.div`
   background-image: url(${stroke});
   background-repeat: no-repeat;
-  background-size: contain;
+  padding: 5rem 0;
+  background-size: 55% 75%;
+  background-position: 5% 50%;
   
-  padding: 2rem;
 
   @media only screen and (max-width: 600px) {
     padding-top: 4rem;

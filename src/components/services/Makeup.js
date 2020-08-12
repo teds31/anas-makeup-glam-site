@@ -7,7 +7,7 @@ import brushes from "../../images/make-up-kit.png"
 import work from "../../images/ana-working.jpg"
 
 //imported colors
-import { lavender, periwinkle, darkBlue, sapphire } from "../../styles"
+import { periwinkle, darkBlue, sapphire } from "../../styles"
 
 //component
 const Makeup = () => {
@@ -44,31 +44,6 @@ const Makeup = () => {
 
 //component-specific styling
 const Wrapper = styled.div`
-  border-bottom: 1px solid ${lavender};
-
-  .title-box {
-    background-color: ${lavender};
-
-    width: 225px;
-    height: 225px;
-
-    margin: 0px 50px;
-
-    font-size: 34px;
-
-    border-radius: 18px;
-
-    img {
-      height: 64px;
-      width: 64px;
-    }
-
-    p {
-      color: ${sapphire};
-      margin: 0;
-    }
-  }
-
   span {
     color: ${darkBlue};
     float: right;
@@ -86,8 +61,7 @@ const Wrapper = styled.div`
   }
 
   .makeup {
-    padding: 30px;
-    padding-top: 10px;
+    margin: 40px 0px;
   }
 `
 //export statement

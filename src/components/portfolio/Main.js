@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { Dialog } from "@reach/dialog"
 import '@reach/dialog/styles.css';
 import { FaRegWindowClose } from "react-icons/fa"
-import {darkBlue} from "../../styles"
+import { darkBlue, purple } from "../../styles"
 
 const Main = () => {
   const data = useStaticQuery(graphql`
@@ -58,8 +58,9 @@ const Wrapper = styled.div`
   padding: 5px;
 
   h2 {
-    margin: 22px;
+    margin: 30px 0px 55px 0px;
     font-size: 3rem;
+    color: ${purple};
   }
 `
 const LightBoxContainer = styled.div`

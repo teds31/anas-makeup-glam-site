@@ -7,7 +7,7 @@ import blowdryer from "../../images/hair-dryer.png"
 import hair from "../../looks/hair-and-makeup.png"
 
 //imported colors
-import { lavender, periwinkle, sapphire } from "../../styles"
+import { periwinkle } from "../../styles"
 
 //component
 const Hair = () => {
@@ -34,31 +34,7 @@ const Hair = () => {
 
 //component-specific styling
 const Wrapper = styled.div`
-  border-bottom: 1px solid ${lavender};
-  padding: 30px;
-
-  .title-box {
-    background-color: ${lavender};
-
-    margin: 0px 50px;
-
-    width: 225px;
-    height: 225px;
-
-    font-size: 34px;
-
-    border-radius: 18px;
-
-    img {
-      height: 64px;
-      width: 64px;
-    }
-
-    p {
-      margin: 0;
-      color: ${sapphire};
-    }
-  }
+  margin: 40px 0px;
 `
 //export statement
 export default Hair

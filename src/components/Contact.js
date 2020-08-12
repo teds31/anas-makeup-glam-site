@@ -170,6 +170,7 @@ const Wrapper = styled.div`
     color: white;
     border-radius: 5px;
     width: 220px;
+    height: 37px;
     border: none;
     float: left;
   }

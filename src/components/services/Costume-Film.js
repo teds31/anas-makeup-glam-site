@@ -7,7 +7,7 @@ import mirror from "../../images/mirror.png"
 import joker from "../../looks/joker.jpg"
 
 //imported colors
-import { lavender, periwinkle, sapphire } from "../../styles"
+import { periwinkle } from "../../styles"
 
 //component
 const Cosplay = () => {
@@ -34,32 +34,7 @@ const Cosplay = () => {
 
 //component-specific styling
 const Wrapper = styled.div`
-  padding: 30px;
-
-  border-bottom: 1px solid ${lavender};
-
-  .title-box {
-    background-color: ${lavender};
-
-    width: 225px;
-    height: 225px;
-
-    font-size: 34px;
-
-    margin: 0px 50px;
-
-    border-radius: 18px;
-
-    img {
-      height: 64px;
-      width: 64px;
-    }
-
-    p {
-      color: ${sapphire};
-      margin: 0;
-    }
-  }
+  margin: 45px 0px;
 `
 //export statement
 export default Cosplay

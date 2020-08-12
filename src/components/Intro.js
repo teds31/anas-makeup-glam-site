@@ -34,13 +34,15 @@ const Wrapper = styled.div`
   button {
     background-color: ${lavender};
 
-    width: 110px;
-    height: 35px;
+    width: 145px;
+    height: 45px;
 
     border: none;
     border-radius: 5px;
 
     font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 
     a:link, a:visited, a:active {
       color: white;

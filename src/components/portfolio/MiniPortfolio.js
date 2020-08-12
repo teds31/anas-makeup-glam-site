@@ -31,7 +31,7 @@ const Mini = () => {
 //component-specific styling
 const Wrapper = styled.div`
   background-color: ${lavender};
-  padding: 1.5rem;
+  padding: 4rem 1.5rem;
 
   .pic-one, .pic-two, .pic-three, .pic-four, .pic-five {
     height: 200px;

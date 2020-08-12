@@ -50,6 +50,16 @@ const Wrapper = styled.div`
     font-family: Font One;
   }
 
+  body {
+    p {
+      font-size: 1.25rem
+    }
+
+    button {
+      height: 37px;
+    }
+  }
+
   #myBtn {
     color: ${lavender};
     font-size: 30px; 

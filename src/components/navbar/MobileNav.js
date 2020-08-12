@@ -6,7 +6,7 @@ import { darkBlue } from "../../styles"
 
 const MobileNav = ({ open }) => {
   return (
-    <Wrapper className="btn-holder d-flex align-items-center" open={open} style={{backgroundColor: `${darkBlue}`}}>
+    <Wrapper className="btn-holder d-flex align-items-center" open={open} style={{backgroundColor: `${darkBlue}`, zIndex: "20"}}>
       <button><Link to="/portfolio">Portfolio</Link></button>
       <button><Link to="/#services">Services</Link></button>
       <button><Link to="/#about">About Me</Link></button>

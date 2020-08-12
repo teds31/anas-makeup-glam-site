@@ -41,18 +41,21 @@ const Wrapper = styled.header`
       border: none;
       border-radius: 4px;
   
-      height: 30px;
-      width: 100px;
+      height: 37px;
+      width: 115px;
   
       margin: 15px;
 
       a:link, a:visited, a:active {
-        color: white;
+        color: ${purple};
       }
     
-      a:hover {
-        color: ${purple};
-        text-decoration: none;
+      button:hover {
+        background-color: ${purple};
+        a:hover {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
