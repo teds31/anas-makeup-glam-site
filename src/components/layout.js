@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FaArrowCircleUp } from "react-icons/fa"
 
-import { lavender } from "../styles"
+import { purple } from "../styles"
 
 //component passing in props
 const Layout = ({ children }) => {
@@ -54,7 +54,7 @@ const Wrapper = styled.div`
   }
 
   #myBtn {
-    color: ${lavender};
+    color: ${purple};
     font-size: 30px; 
   }
 `
