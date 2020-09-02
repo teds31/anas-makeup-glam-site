@@ -22,7 +22,7 @@ const About = () => {
         </p>
 
         <p>
-          For as long as I can remember, makeup and glamour have been a passion of mine. What once started as a hobby in high school, doing makeovers for my friends, I soon realized the transformation they were experiencing. The work I was doing was turning them into beautiful, confident women who were ready to take on the world. I discovered that this would be my calling in life and decided to follow my dreams by attending <em>Rika Makeup Academy</em> right here in Las Vegas.
+          For as long as I can remember, makeup and glamour have been a passion of mine. What once started as a hobby in high school, doing makeovers for my friends, I soon realized the transformation they were experiencing. The work I was doing was turning them into beautiful, confident women who were ready to take on the world. I discovered that this would be my calling in life and decided to follow my dreams by attending a professional school right here in Las Vegas.
         </p>
 
         <p>
