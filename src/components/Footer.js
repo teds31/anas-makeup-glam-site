@@ -12,8 +12,8 @@ import { darkBlue, periwinkle } from "../styles"
 //component
 const Footer = () => {
   return (
-    <Wrapper className="row justify-content-center align-items-center flex-column">
-      <div className="justify-content-center">
+    <Wrapper className="container justify-content-center align-items-center flex-column">
+      <div className="row justify-content-center">
         <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
           <FaFacebookSquare className="icon" />
         </a>
@@ -31,9 +31,14 @@ const Footer = () => {
         </a>
       </div>
       
-      <p><a href="tel:702-381-3158">702)381-3158</a> | <a href="mailto: booking@anasmakeupglam.com">booking@anasmakeupglam.com</a></p>
+      <div className="d-flex justify-content-center flex-column text-center">
+        <p><a href="tel:702-381-3158">702)381-3158</a> | <a href="mailto: booking@anasmakeupglam.com">booking@anasmakeupglam.com</a></p>
 
-      <p>© {new Date().getFullYear()}, Made with <span><RiHeartsLine /></span> by <a href="https://www.linkedin.com/in/irene-perez-a65682154/" rel="noopener noreferrer" target="_blank" >Irene Perez </a></p>
+        <p>
+          © {new Date().getFullYear()},<br /> Made with <span><RiHeartsLine /></span> by <a href="https://www.linkedin.com/in/irene-perez-a65682154/" rel="noopener noreferrer" target="_blank">Irene Perez</a>
+        </p>
+
+      </div>
     </Wrapper>
   )
 }
