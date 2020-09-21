@@ -16,7 +16,7 @@ const About = () => {
         <img src={ana} alt="Ana"/>
       </div>
 
-      <div className="col-lg-5">
+      <div className="col-lg-5 text-center">
         <p>
           Hello, my name is Ana and I'm a certified makeup artist based in beautiful Las Vegas, Nevada.
         </p>
