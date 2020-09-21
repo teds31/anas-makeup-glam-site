@@ -43,6 +43,8 @@ const Wrapper = styled.div`
   
 
   @media only screen and (max-width: 600px) {
+    background-size: 125% 65%;
+    background-position: 70% -40%;
     padding-top: 4rem;
   }
 
