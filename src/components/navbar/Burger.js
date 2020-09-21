@@ -27,8 +27,9 @@ const StyledBurger = styled.div`
   z-index: 30;
   display: none;
   background: ${darkBlue};
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
   align-items: center;
 
   @media (max-width: 768px) {
