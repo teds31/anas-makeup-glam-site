@@ -12,7 +12,7 @@ import { darkBlue, periwinkle } from "../styles"
 //component
 const Footer = () => {
   return (
-    <Wrapper className="container justify-content-center align-items-center flex-column">
+    <Wrapper className="container justify-content-center align-items-center flex-column" style={{maxWidth: "1450px"}}>
       <div className="row justify-content-center">
         <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
           <FaFacebookSquare className="icon" />
