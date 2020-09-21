@@ -13,7 +13,7 @@ import { periwinkle } from "../../styles"
 const Hair = () => {
   return (
     <Wrapper className="d-flex align-items-center justify-content-around flex-wrap">
-      <div className="col-sm-3">
+      <div className="col-sm-3 d-flex justify-content-center">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={blowdryer} alt="blow dryer"/>
           <p className="title">Hair Styling Consultations</p>

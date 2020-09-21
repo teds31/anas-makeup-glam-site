@@ -17,7 +17,7 @@ const Makeup = () => {
         <h1 style={{color: `${sapphire}`, fontSize: "3rem"}}>Services</h1>
       </div>
       <div className="makeup d-flex align-items-center justify-content-around flex-wrap">
-        <div className="col-sm-3">
+        <div className="col-sm-3 d-flex justify-content-center">
           <div className="title-box d-flex align-items-center justify-content-center flex-column">
             <img src={brushes} alt="makeup brushes"/>
             <p className="title">Makeup Glam</p>
