@@ -6,13 +6,13 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-your-fonts',
+      resolve: "gatsby-plugin-your-fonts",
       options: {
-        host: 'girafffene.github.io/fonts',
+        host: "girafffene.github.io/fonts",
         fonts: [
           `font-one.css`, // font-family: 'Font One';
-          `font-two.css` // font-family: 'Font Two';
-        ]
+          `font-two.css`, // font-family: 'Font Two';
+        ],
       },
     },
     {
@@ -39,6 +39,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -46,7 +47,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/logos/lips.png`, 
+        icon: `src/images/logos/lips.png`,
       },
     },
   ],
