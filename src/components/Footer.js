@@ -3,7 +3,12 @@ import React from "react"
 import styled from "styled-components"
 
 //imported icons
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaYoutube } from "react-icons/fa"
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaTwitterSquare,
+  FaYoutube,
+} from "react-icons/fa"
 import { RiHeartsLine } from "react-icons/ri"
 
 //imported colors
@@ -12,32 +17,70 @@ import { darkBlue, periwinkle } from "../styles"
 //component
 const Footer = () => {
   return (
-    <Wrapper className="container justify-content-center align-items-center flex-column" style={{maxWidth: "1450px"}}>
+    <Wrapper
+      className="container justify-content-center align-items-center flex-column"
+      style={{ maxWidth: "1450px" }}
+    >
       <div className="row justify-content-center">
-        <a href="https://www.facebook.com/Anitasaavedra702/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Facebook page">
+        <a
+          href="https://www.facebook.com/Anitasaavedra702/"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="link to Ana's Facebook page"
+        >
           <FaFacebookSquare className="icon" />
         </a>
 
-        <a href="https://twitter.com/AnaSaav20733864?s=09" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Twitter page">
+        <a
+          href="https://twitter.com/AnaSaav20733864?s=09"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="link to Ana's Twitter page"
+        >
           <FaTwitterSquare className="icon" />
         </a>
 
-        <a href="https://www.instagram.com/anas_makeup_glam/" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's Instagram page">
+        <a
+          href="https://www.instagram.com/anas_makeup_glam/"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="link to Ana's Instagram page"
+        >
           <FaInstagram className="icon" />
         </a>
 
-        <a href="https://www.youtube.com/channel/UCxck-Oyy9pTGb_ZtfSqsBdQ" rel="noopener noreferrer" target="_blank" aria-label="link to Ana's YouTube channel">
+        <a
+          href="https://www.youtube.com/channel/UCxck-Oyy9pTGb_ZtfSqsBdQ"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="link to Ana's YouTube channel"
+        >
           <FaYoutube className="icon" />
         </a>
       </div>
-      
-      <div className="d-flex justify-content-center flex-column text-center">
-        <p><a href="tel:702-381-3158">702)381-3158</a> | <a href="mailto: booking@anasmakeupglam.com">booking@anasmakeupglam.com</a></p>
 
+      <div className="d-flex justify-content-center flex-column text-center">
         <p>
-          © {new Date().getFullYear()},<br /> Made with <span><RiHeartsLine /></span> by <a href="https://www.linkedin.com/in/irene-perez-a65682154/" rel="noopener noreferrer" target="_blank">Irene Perez</a>
+          <a href="tel:702-381-3158">(702) 381-3158</a> |{" "}
+          <a href="mailto: booking@anasmakeupglam.com">
+            booking@anasmakeupglam.com
+          </a>
         </p>
 
+        <p>
+          © {new Date().getFullYear()},<br /> Made with{" "}
+          <span>
+            <RiHeartsLine />
+          </span>{" "}
+          by{" "}
+          <a
+            href="https://www.linkedin.com/in/irene-perez-a65682154/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Irene Perez
+          </a>
+        </p>
       </div>
     </Wrapper>
   )
@@ -50,7 +93,10 @@ const Wrapper = styled.footer`
     text-decoration: none;
   }
 
-  a:link, a:visited, a:active, p {
+  a:link,
+  a:visited,
+  a:active,
+  p {
     color: white;
   }
 
