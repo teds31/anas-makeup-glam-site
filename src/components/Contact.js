@@ -1,7 +1,6 @@
 //imported dependencies
 import React from "react"
 import styled from "styled-components"
-// import Validator from "validator"
 
 //imported colors
 import { sapphire, purple } from "../styles"
@@ -36,8 +35,6 @@ const Contact = () => {
     </Wrapper>
   )
 }
-
-// {/*nameError ? "input-error" : ""*/}
 
 const Wrapper = styled.div`
   padding: 45px;
