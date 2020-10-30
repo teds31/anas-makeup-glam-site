@@ -19,6 +19,7 @@ const Contact = () => {
         data-netlify-recaptcha="true"
         className="d-flex flex-wrap flex-column align-items-center text-center justify-content-center"
       >
+        <input type="hidden" name="anas-contact" value="contact" />
 
         <input id="name" type="text" name="name" placeholder="Name :" required />
 
