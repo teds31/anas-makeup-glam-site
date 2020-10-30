@@ -20,13 +20,15 @@ const Contact = () => {
         className="d-flex flex-wrap flex-column align-items-center text-center justify-content-center"
       >
 
-        <input id="name" type="text" name="name" placeholder="Name :" />
+        <input id="name" type="text" name="name" placeholder="Name :" required />
 
-        <input id="email" type="email" name="email" placeholder="Email :" /> 
+        <input id="email" type="email" name="email" placeholder="Email :" required /> 
 
-        <input id="subject" type="text" name="subject" placeholder="Subject :" />
+        <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+        <input id="subject" type="text" name="subject" placeholder="Subject :" required />
         
-        <textarea name="message" placeholder="type your message here :" />
+        <textarea name="message" placeholder="type your message here :" required />
 
         <div data-netlify-recaptcha="true"></div>
 
