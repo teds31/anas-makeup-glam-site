@@ -13,7 +13,7 @@ import Contact from "../components/Contact"
 export default () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" description="Ana's Makup Glam portfolio website." />
       <main>
         <Intro />
         <About />
