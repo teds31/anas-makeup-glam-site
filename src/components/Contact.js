@@ -17,6 +17,7 @@ const Contact = () => {
         name="anas-contact"
         method="POST"
         data-netlify="true"
+        data-netlify-recaptcha="true"
         className="d-flex flex-wrap flex-column align-items-center text-center justify-content-center"
       >
 
@@ -27,6 +28,8 @@ const Contact = () => {
         <input id="subject" type="text" name="subject" placeholder="Subject :" />
         
         <textarea name="message" placeholder="type your message here :" />
+
+        <div data-netlify-recaptcha="true"></div>
 
         <button type="submit">Send</button>
       </form>
