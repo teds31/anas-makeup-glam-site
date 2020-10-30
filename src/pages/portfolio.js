@@ -9,7 +9,7 @@ const Portfolio = () => {
 
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <SEO title="Portfolio" description="This is Ana's portfolio page" />
       <main>
         <Main />
         <Contact />
