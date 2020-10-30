@@ -14,7 +14,7 @@ const Contact = () => {
       <p>Ready to get glammed up or have any questions? Call or send me a message!</p>
 
       <form 
-        name="contact"
+        name="anas-contact"
         method="POST"
         data-netlify="true"
         className="d-flex flex-wrap flex-column align-items-center text-center justify-content-center"
