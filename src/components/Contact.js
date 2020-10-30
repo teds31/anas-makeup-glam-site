@@ -25,7 +25,7 @@ const Contact = () => {
 
         <input id="email" type="email" name="email" placeholder="Email :" required /> 
 
-        <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number: " required />
 
         <input id="subject" type="text" name="subject" placeholder="Subject :" required />
         
