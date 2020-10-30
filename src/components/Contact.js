@@ -72,15 +72,6 @@ const Wrapper = styled.div`
     overflow: scroll;
   }
 
-  .input-error {
-    border-radius: 5px;
-    border: 1px solid red;
-
-    ::placeholder {
-      color: red;
-    }
-  }
-
   button {
     background-color: ${purple};
     padding: 5px;
