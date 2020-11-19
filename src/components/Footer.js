@@ -61,7 +61,7 @@ const Footer = () => {
 
       <div className="d-flex justify-content-center flex-column text-center">
         <p>
-          <a href="tel:702-381-3158">(702) 381-3158</a> |{" "}
+          <a href="tel:702-381-3158">(702) 347-0858</a> |{" "}
           <a href="mailto: booking@anasmakeupglam.com">
             booking@anasmakeupglam.com
           </a>

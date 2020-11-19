@@ -29,7 +29,7 @@ const Contact = () => {
 
         <input id="subject" type="text" name="subject" placeholder="Subject :" required />
         
-        <textarea name="message" placeholder="type your message here :" required />
+        <textarea name="message" placeholder="Type your message here :" required />
 
         <div data-netlify-recaptcha="true"></div>
 
