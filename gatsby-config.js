@@ -1,30 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `Ana's Makeup Glam Site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@ireneperez`,
+    description: `The number one makeup artist in Las Vegas.`,
+    author: `@teddystanowski`,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-your-fonts",
-      options: {
-        host: "girafffene.github.io/fonts",
-        fonts: [
-          `font-one.css`, // font-family: 'Font One';
-          `font-two.css`, // font-family: 'Font Two';
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Homemade Apple`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Homemade Apple`,
+    //       },
+    //     ],
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
