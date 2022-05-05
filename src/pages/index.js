@@ -21,7 +21,14 @@ export default () => {
         <Testimonials />
         <Services />
         <Quote />
-        <Contact />
+        <div className="d-flex justify-content-center flex-column text-center">
+          <p>
+            <a href="tel:702-381-3158">(702) 347-0858</a> |{" "}
+            <a href="mailto: booking@anasmakeupglam.com">
+              booking@anasmakeupglam.com
+            </a>
+          </p>
+        </div>
       </main>
     </Layout>
   )
