@@ -13,10 +13,10 @@ import { periwinkle, darkBlue, sapphire } from "../../styles"
 const Makeup = () => {
   return (
     <Wrapper>
-      <div className="col-sm-12 d-flex justify-content-center" style={{padding: "25px"}}>
+      <div className="col-sm-12 d-flex justify-content-center" style={{padding: "24px"}}>
         <h1 style={{color: `${sapphire}`, fontSize: "3rem"}}>Services</h1>
       </div>
-      <div className="makeup d-flex align-items-center justify-content-around flex-wrap">
+      <div className="makeup d-flex align-items-center justify-content-around flex-wrap pl-8">
         <div className="col-sm-3 d-flex justify-content-center">
           <div className="title-box d-flex align-items-center justify-content-center flex-column">
             <img src={brushes} alt="makeup brushes"/>
@@ -25,12 +25,12 @@ const Makeup = () => {
         </div>
 
         <div style={{padding: "5px", color: `${periwinkle}`}} className="col-sm-4">
-          <ul>
-            <li>Day Makeup / Maquillage de Dia: <span>$50</span> </li>
-            <li>Cut Crease (or) Glitter: <span>$65</span> </li>
-            <li>Full Eye Glam / Glamour Completo: <span>$75</span> </li>
-            <li>Photo Shoots / Sección de Fotografía: <span>$75</span> </li>
-            <li>Strip Lashes / Pestañas: <span>$10</span> </li>
+          <ul className="text-center">
+            <li>Day Makeup / Maquillage de Dia </li>
+            <li>Cut Crease (or) Glitter </li>
+            <li>Full Eye Glam / Glamour Completo </li>
+            <li>Photo Shoots / Sección de Fotografía </li>
+            <li>Strip Lashes / Pestañas </li>
           </ul>
         </div>
 
@@ -63,7 +63,14 @@ const Wrapper = styled.div`
 
   .makeup {
     margin: 40px 0px;
+    padding-left: 8rem;
   }
+
+  @media (max-width: 768px) {
+    .makeup{
+    padding-left: 0px;
+  }
+}
 `
 //export statement
 export default Makeup

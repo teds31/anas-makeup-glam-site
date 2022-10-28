@@ -62,8 +62,8 @@ const Footer = () => {
       <div className="d-flex justify-content-center flex-column text-center">
         <p>
           <a href="tel:702-381-3158">(702) 347-0858</a> |{" "}
-          <a href="mailto: booking@anasmakeupglam.com">
-            booking@anasmakeupglam.com
+          <a href="mailto: anasmakeup87@yahoo.com">
+            anasmakeup87@yahoo.com
           </a>
         </p>
 
@@ -72,14 +72,7 @@ const Footer = () => {
           <span>
             <RiHeartsLine />
           </span>{" "}
-          by{" "}
-          <a
-            href="https://www.linkedin.com/in/irene-perez-a65682154/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Irene Perez
-          </a>
+          in Vegas
         </p>
       </div>
     </Wrapper>

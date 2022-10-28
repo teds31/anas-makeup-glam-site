@@ -31,8 +31,8 @@ export default () => {
             <a class="phone-link" href="tel:702-381-3158">(702) 347-0858</a>
             <br /><br />
 
-            <a class="email-link" href="mailto: booking@anasmakeupglam.com">
-              booking@anasmakeupglam.com
+            <a class="email-link" href="mailto: anasmakeup87@yahoo.com">
+              AnasMakeup87@yahoo.com
             </a>
             </Wrapper>
         </div>

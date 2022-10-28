@@ -12,7 +12,7 @@ import { periwinkle } from "../../styles"
 //component
 const Cosplay = () => {
   return (
-    <Wrapper className="d-flex align-items-center justify-content-around flex-wrap">
+    <Wrapper className="costume d-flex align-items-center justify-content-around flex-wrap">
       <div className="col-sm-3 d-flex justify-content-center">
         <div className="title-box d-flex align-items-center justify-content-center text-center flex-column">
           <img src={mirror} alt="vanity mirror"/>
@@ -34,7 +34,11 @@ const Cosplay = () => {
 
 //component-specific styling
 const Wrapper = styled.div`
-  margin: 45px 0px;
+margin: 40px 0px;
+padding-left: 8rem;
+@media (max-width: 768px) {
+  padding-left: 0px;
+}
 `
 //export statement
 export default Cosplay

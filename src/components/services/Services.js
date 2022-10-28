@@ -10,7 +10,7 @@ import { lavender, sapphire } from "../../styles"
 
 const Services = () => {
   return (
-    <Wrapper id="services">
+    <Wrapper id="services" className="text-center border">
       <Makeup />
       <Hair />
       <Cosplay />
