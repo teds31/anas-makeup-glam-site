@@ -1,7 +1,7 @@
 //imported dependencies
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 //imported image
 import colorLogo from "../images/logos/color-logo-transparent.png"
@@ -14,14 +14,14 @@ const Intro = () => {
   return (
     <Wrapper className="d-flex align-items-center flex-column">
       <img src={colorLogo} alt="logo" />
-      <button><Link to="#contact">Book Now</Link></button>
+      <button onClick={() => scrollTo('#contact')}>Book Now</button>
     </Wrapper>
   )
 }
 //component-specific styling
 const Wrapper = styled.div`
   background-color: ${sapphire};
-  
+
   padding: 3.5rem;
 
   img {
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
     a:link, a:visited, a:active {
       color: ${purple};
     }
-  
+
     a {
       text-decoration: none;
     }

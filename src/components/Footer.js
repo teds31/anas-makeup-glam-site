@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <Wrapper
       className="container justify-content-center align-items-center flex-column"
-      style={{ maxWidth: "1450px" }}
+      style={{ maxWidth: "1850px" }}
     >
       <div className="row justify-content-center">
         <a

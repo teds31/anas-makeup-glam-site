@@ -11,12 +11,11 @@ const Contact = () => {
       <h1 style={{color: `${purple}`, marginBottom: "15px", fontSize: "3rem"}}>Contact Me</h1>
 
       <p>Ready to get glammed up or have any questions? Call or send me a message!</p>
-                  <a class="phone-link" href="tel:702-381-3158">(702) 347-0858</a>
+        <a className="phone-link" href="tel:702-381-3158">(702) 347-0858</a>
 
-
-            <a class="email-link" href="mailto: anasmakeup87@yahoo.com">
-              AnasMakeup87@yahoo.com
-            </a>
+        <a className="email-link" href="mailto: anasmakeup87@yahoo.com">
+          AnasMakeup87@yahoo.com
+        </a>
     </Wrapper>
   )
 }

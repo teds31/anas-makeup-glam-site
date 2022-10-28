@@ -26,7 +26,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Ana's Makeup Glam`,
 }
 
 //component-specific styling
@@ -37,13 +37,13 @@ const Wrapper = styled.header`
     button {
       background-color: ${lavender};
       color: black;
-  
+
       border: none;
       border-radius: 4px;
-  
+
       height: 37px;
       width: 115px;
-  
+
       margin: 15px;
 
       a {
